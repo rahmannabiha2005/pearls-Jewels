@@ -756,59 +756,71 @@
 
   padding-top: 15px;
 
-/* ===== PROFESSIONAL MOBILE HEADER FIX ===== */
+/* ===== FINAL MOBILE HEADER ===== */
 
 @media (max-width: 768px){
 
-/* Header stays horizontal */
+header{
+
+padding: 8px 10px;
+
+}
+
+/* Keep header in ONE LINE */
 
 .header-inner{
 
-    flex-direction: row;
+display:flex;
 
-    justify-content: space-between;
+flex-direction: row;
 
-    align-items: center;
+justify-content: space-between;
+
+align-items: center;
 
 }
 
-/* Brand stays horizontal */
+/* Logo + text horizontal */
 
 .brand{
 
-    flex-direction: row;
+display:flex;
 
-    align-items: center;
+flex-direction: row;
 
-    gap: 10px;
+align-items: center;
 
-}
+gap: 8px;
 
-/* Smaller logo */
-
-.logo-wrap img{
-
-    width: 45px;
-
-    height: 45px;
-
-    border-radius: 50%;
+min-width: auto;
 
 }
 
-/* Smaller title */
+/* Logo size */
+
+.logo-wrap{
+
+width: 45px;
+
+height: 45px;
+
+}
+
+/* Title smaller */
 
 .brand-text h1{
 
-    font-size: 20px;
+font-size: 18px;
+
+line-height: 1.2;
 
 }
 
-/* Smaller slogan */
+/* Hide slogan for clean mobile */
 
 .brand-text p{
 
-    font-size: 12px;
+display:none;
 
 }
 
@@ -816,27 +828,28 @@
 
 nav{
 
-    display: flex;
+display:flex;
 
-    flex-wrap: wrap;
+flex-direction: row;
 
-    justify-content: flex-end;
+gap: 6px;
 
-    gap: 8px;
+align-items: center;
 
 }
 
-/* Navigation text smaller */
+/* Navigation style */
 
 nav a{
 
-    font-size: 13px;
+font-size: 13px;
 
-    padding: 4px 10px;
-
-}
+padding: 4px 8px;
 
 }
 
+}
  
+ 
+
 
