@@ -670,29 +670,6 @@
   
   /* Responsive */
   
-  @media (max-width: 980px){
-  
-    .hero-inner{ grid-template-columns: 1fr; }
-  
-    .grid{ grid-template-columns: repeat(2, 1fr); }
-  
-    .features{ grid-template-columns: 1fr; }
-  
-  }
-  
-  @media (max-width: 560px){
-  
-    .grid{ grid-template-columns: 1fr; }
-  
-    .brand{ min-width: auto; }
-  
-    .product-row{ grid-template-columns: 1fr; }
-  
-    .product-row img{ width:100%; height: 220px; }
-  
-    .form-grid{ grid-template-columns: 1fr; }
-  
-  }
    /* ---------- FOOTER (HORIZONTAL LAYOUT) ---------- */
 
 .site-footer {
@@ -779,71 +756,78 @@
 
   padding-top: 15px;
 
-/* =========================
+/* ================= MOBILE FINAL DESIGN ================= */
 
-   FINAL MOBILE DESIGN
+@media (max-width: 768px){
 
-   ========================= */
+/* ---------- Top Bar ---------- */
 
-@media (max-width: 768px) {
-
-/* ---------- TOP BAR ---------- */
-
-.topbar {
-
-    text-align: center;
-
-    padding: 10px;
-
-    font-size: 14px;
-
-}
-
-/* ---------- HEADER ---------- */
-
-.header-inner {
+.topbar .container{
 
     flex-direction: column;
 
     text-align: center;
 
-    gap: 10px;
-
-}
-
-/* ---------- LOGO ---------- */
-
-.logo-wrap img {
-
-    width: 70px;
-
-    height: 70px;
-
-    object-fit: cover;
-
-    border-radius: 50%;
-
-    margin-bottom: 5px;
-
-}
-
-/* ---------- BRAND TEXT ---------- */
-
-.brand-text h1 {
-
-    font-size: 26px;
-
-}
-
-.brand-text p {
+    gap: 6px;
 
     font-size: 14px;
 
 }
 
-/* ---------- NAVIGATION ---------- */
 
-nav {
+/* ---------- Header ---------- */
+
+.header-inner{
+
+    flex-direction: column;
+
+    text-align: center;
+
+    gap: 14px;
+
+}
+
+
+/* ---------- Brand Section ---------- */
+
+.brand{
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.logo-wrap img{
+
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+}
+
+.brand-text h1{
+
+    font-size: 26px;
+
+}
+
+.brand-text p{
+
+    font-size: 14px;
+
+}
+
+
+/* ---------- Navigation ---------- */
+
+nav{
+
+    width: 100%;
 
     display: flex;
 
@@ -851,75 +835,59 @@ nav {
 
     flex-wrap: wrap;
 
-    gap: 12px;
-
-    margin-top: 10px;
+    gap: 10px;
 
 }
 
-nav a {
-
-    padding: 8px 14px;
-
-    font-size: 14px;
-
-    border-radius: 20px;
-
-}
-
-/* ---------- HERO SECTION ---------- */
-
-.hero-card {
-
-    padding: 20px;
-
-    border-radius: 18px;
-
-}
-
-.hero-card h2 {
-
-    font-size: 26px;
-
-}
-
-.hero-card p {
+nav a{
 
     font-size: 15px;
 
-}
-
-/* =========================
-
-   PRODUCT GRID (LIKE REAL SHOP)
-
-   ========================= */
-
-.product-list {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 16px;
+    padding: 6px 14px;
 
 }
 
-/* Individual product card */
 
-.product-row {
+/* ---------- Hero Section ---------- */
 
-    flex-direction: column;
+.hero-inner{
+
+    grid-template-columns: 1fr;
 
     text-align: center;
 
-    padding: 12px;
+}
+
+
+/* ---------- Product Cards ---------- */
+
+.product-list{
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 14px;
 
 }
 
-/* Product Images */
+.product-row{
 
-.product-row img {
+    display: flex;
+
+    flex-direction: column;
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 10px;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+}
+
+.product-row img{
 
     width: 100%;
 
@@ -929,45 +897,60 @@ nav a {
 
     border-radius: 12px;
 
-    margin-bottom: 10px;
-
 }
 
-/* Product title */
-
-.product-row h4 {
-
-    font-size: 16px;
-
-}
-
-/* Price */
-
-.price {
+.product-row h4{
 
     font-size: 15px;
 
+    margin-top: 8px;
+
 }
 
-/* Buttons */
-
-.btn-small {
+.product-row p{
 
     font-size: 13px;
 
-    padding: 7px 14px;
+}
+
+.price{
+
+    font-weight: 600;
+
+    font-size: 14px;
 
 }
 
-/* ---------- FOOTER ---------- */
 
-.footer-inner {
+/* ---------- Buttons ---------- */
+
+.btn{
+
+    font-size: 13px;
+
+    padding: 6px 14px;
+
+}
+
+
+/* ---------- Contact Form ---------- */
+
+.form-grid{
+
+    grid-template-columns: 1fr;
+
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer-inner{
 
     flex-direction: column;
 
     text-align: center;
 
-    gap: 8px;
+    gap: 10px;
 
 }
 
