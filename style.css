@@ -756,203 +756,87 @@
 
   padding-top: 15px;
 
-/* ================= MOBILE FINAL DESIGN ================= */
+/* ===== PROFESSIONAL MOBILE HEADER FIX ===== */
 
 @media (max-width: 768px){
 
-/* ---------- Top Bar ---------- */
-
-.topbar .container{
-
-    flex-direction: column;
-
-    text-align: center;
-
-    gap: 6px;
-
-    font-size: 14px;
-
-}
-
-
-/* ---------- Header ---------- */
+/* Header stays horizontal */
 
 .header-inner{
 
-    flex-direction: column;
+    flex-direction: row;
 
-    text-align: center;
-
-    gap: 14px;
-
-}
-
-
-/* ---------- Brand Section ---------- */
-
-.brand{
-
-    flex-direction: column;
+    justify-content: space-between;
 
     align-items: center;
 
-    text-align: center;
+}
+
+/* Brand stays horizontal */
+
+.brand{
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 10px;
 
 }
 
+/* Smaller logo */
+
 .logo-wrap img{
 
-    width: 75px;
+    width: 45px;
 
-    height: 75px;
+    height: 45px;
 
     border-radius: 50%;
 
 }
 
+/* Smaller title */
+
 .brand-text h1{
 
-    font-size: 26px;
+    font-size: 20px;
 
 }
+
+/* Smaller slogan */
 
 .brand-text p{
 
-    font-size: 14px;
+    font-size: 12px;
 
 }
 
-
-/* ---------- Navigation ---------- */
+/* Navigation horizontal */
 
 nav{
 
-    width: 100%;
-
     display: flex;
-
-    justify-content: center;
 
     flex-wrap: wrap;
 
-    gap: 10px;
+    justify-content: flex-end;
+
+    gap: 8px;
 
 }
+
+/* Navigation text smaller */
 
 nav a{
 
-    font-size: 15px;
-
-    padding: 6px 14px;
-
-}
-
-
-/* ---------- Hero Section ---------- */
-
-.hero-inner{
-
-    grid-template-columns: 1fr;
-
-    text-align: center;
-
-}
-
-
-/* ---------- Product Cards ---------- */
-
-.product-list{
-
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-
-    gap: 14px;
-
-}
-
-.product-row{
-
-    display: flex;
-
-    flex-direction: column;
-
-    background: white;
-
-    border-radius: 16px;
-
-    padding: 10px;
-
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-
-}
-
-.product-row img{
-
-    width: 100%;
-
-    height: 160px;
-
-    object-fit: cover;
-
-    border-radius: 12px;
-
-}
-
-.product-row h4{
-
-    font-size: 15px;
-
-    margin-top: 8px;
-
-}
-
-.product-row p{
-
     font-size: 13px;
 
-}
-
-.price{
-
-    font-weight: 600;
-
-    font-size: 14px;
-
-}
-
-
-/* ---------- Buttons ---------- */
-
-.btn{
-
-    font-size: 13px;
-
-    padding: 6px 14px;
-
-}
-
-
-/* ---------- Contact Form ---------- */
-
-.form-grid{
-
-    grid-template-columns: 1fr;
-
-}
-
-
-/* ---------- Footer ---------- */
-
-.footer-inner{
-
-    flex-direction: column;
-
-    text-align: center;
-
-    gap: 10px;
+    padding: 4px 10px;
 
 }
 
 }
+
  
+
