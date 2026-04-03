@@ -51,7 +51,7 @@
 <h4>Pearl Necklace</h4>
 <p>Elegant & timeless. A classic piece designed for daily wear or special events.</p>
 <p class="price">From £35</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -60,7 +60,7 @@
 <h4>Pearl Ring</h4>
 <p>Classic statement ring with a soft luxury finish—perfect for gifts.</p>
 <p class="price">From £25</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -69,7 +69,7 @@
 <h4>Pearl Earrings</h4>
 <p>Delicate earrings that add a refined and elegant touch to any outfit.</p>
 <p class="price">From £18</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -78,7 +78,7 @@
 <h4>Pearl Bracelet</h4>
 <p>Minimal and elegant. A perfect gift for birthdays and events.</p>
 <p class="price">From £22</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -87,7 +87,7 @@
 <h4>Bangle</h4>
 <p>A stylish bangle to pair with pearls—simple, clean, and elegant.</p>
 <p class="price">From £20</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -96,7 +96,7 @@
 <h4>Brooch</h4>
 <p>Beautiful detail piece to elevate a scarf, dress, or blazer.</p>
 <p class="price">From £15</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -105,7 +105,7 @@
 <h4>Cufflinks</h4>
 <p>Perfect formal accessory—gift-ready and premium looking.</p>
 <p class="price">From £28</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -114,7 +114,7 @@
 <h4>Anklets</h4>
 <p>Light and elegant style—perfect for summer and special occasions.</p>
 <p class="price">From £14</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -123,7 +123,7 @@
 <h4>Nose Pin</h4>
 <p>Small detail, big impact—simple and classy accessory.</p>
 <p class="price">From £10</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -132,7 +132,7 @@
 <h4>Hijab Clip</h4>
 <p>Practical and elegant—designed to hold comfortably and look beautiful.</p>
 <p class="price">From £12</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -141,7 +141,7 @@
 <h4>Hair Accessories</h4>
 <p>Soft aesthetic styles—perfect for bridal looks and special events.</p>
 <p class="price">From £16</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 <div class="product-row">
@@ -150,7 +150,7 @@
 <h4>Pearl Crown</h4>
 <p>Bridal elegance with a premium finish—ideal for special occasions.</p>
 <p class="price">From £40</p>
-<a class="btn btn-small" href="shop.html">🛒 Add to Cart</a>
+<a class="btn btn-small" href="#" onclick="openCheckout()">🛒 Add to Cart</a>
 </div>
 </div>
 </div>
@@ -190,5 +190,40 @@
      © 2026 Pearls Jewels • All Rights Reserved
 </div>
 </footer>
+ <!-- Checkout Popup -->
+<div id="checkoutBox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+<div style="background:white; padding:20px; border-radius:15px; width:300px;">
+<h3>Checkout</h3>
+<input type="text" placeholder="Full Name" style="width:100%; margin:8px 0; padding:8px;">
+<input type="text" placeholder="Card Number" style="width:100%; margin:8px 0; padding:8px;">
+<input type="text" placeholder="Expiry Date" style="width:100%; margin:8px 0; padding:8px;">
+<input type="text" placeholder="CVV" style="width:100%; margin:8px 0; padding:8px;">
+<button onclick="placeOrder()" style="width:100%; margin-top:10px; padding:10px;">Pay Now</button>
+<button onclick="closeCheckout()" style="width:100%; margin-top:5px; padding:8px;">Cancel</button>
+</div>
+</div>
+<script>
+
+function openCheckout() {
+
+  document.getElementById("checkoutBox").style.display = "flex";
+
+}
+
+function closeCheckout() {
+
+  document.getElementById("checkoutBox").style.display = "none";
+
+}
+
+function placeOrder() {
+
+  alert("Payment successful! Order placed.");
+
+  document.getElementById("checkoutBox").style.display = "none";
+
+}
+</script>
+ 
 </body>
 </html>
