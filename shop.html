@@ -105,6 +105,22 @@
 </div>
 </div>
 </main>
+<div class="reviews">
+  <h3>Customer Reviews</h3>
+
+  <p>⭐️⭐️⭐️⭐️⭐️</p>
+  <p>"Beautiful jewellery, I really love it!"</p>
+
+  <p>⭐️⭐️⭐️⭐️</p>
+  <p>"Good quality and fast delivery."</p>
+
+  <h4>Leave a Review</h4>
+
+  <input type="text" id="reviewInput" placeholder="Write your review...">
+  <button onclick="addReview()">Submit</button>
+
+  <div id="newReviews"></div>
+</div>
 <footer class="site-footer">
     <div class="container footer-grid">
     <div>
@@ -138,6 +154,30 @@
        © 2026 Pearls Jewels • All Rights Reserved
     </div>
     </footer>
+... your page content ...
+
+<footer>
+  ... footer content ...
+</footer>
+
+<!-- ✅ PUT JAVASCRIPT HERE -->
+<script>
+function addReview(){
+  let input = document.getElementById("reviewInput").value;
+  
+  if(input === ""){
+    alert("Please write a review first");
+  } else {
+    let newReview = document.createElement("p");
+    newReview.innerText = "⭐️⭐️⭐️⭐️⭐️ " + input;
+
+    document.getElementById("newReviews").appendChild(newReview);
+    document.getElementById("reviewInput").value = "";
+  }
+}
+</script>
+
+</body>
 </body>
 </html>
  
