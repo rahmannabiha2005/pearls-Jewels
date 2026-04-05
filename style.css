@@ -738,3 +738,33 @@ footer{
     padding: 8px 12px;
   }
 }
+.reviews{
+  background: rgba(255,255,255,0.78);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin-top: 20px;
+}
+
+.reviews h3,
+.reviews h4{
+  margin-bottom: 10px;
+}
+
+.reviews input{
+  width: 70%;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.12);
+  margin-top: 10px;
+}
+
+.reviews button{
+  margin-left: 10px;
+}
+
+#newReviews p{
+  margin-top: 10px;
+  color: var(--text);
+}
